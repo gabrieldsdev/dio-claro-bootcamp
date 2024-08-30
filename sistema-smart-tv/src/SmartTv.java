@@ -1,5 +1,5 @@
 public class SmartTv {
-    boolean ligada = false;
+    boolean isLigada = false;
     int canal = 1;
     int volume = 25;
 }
