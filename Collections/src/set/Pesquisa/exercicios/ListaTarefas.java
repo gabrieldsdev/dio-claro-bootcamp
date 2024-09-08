@@ -105,7 +105,7 @@ public class ListaTarefas {
         //Obtendo tarefas pendentes
         System.out.println(listaTarefas.obterTarefasPendentes());
 
-        //Obtendo taregas concluidas
+        //Obtendo tarefas concluidas
         System.out.println(listaTarefas.obterTarefasConcluidas());
 
         // Marcando tarefas como concluídas
