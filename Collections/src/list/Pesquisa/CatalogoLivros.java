@@ -15,6 +15,10 @@ public class CatalogoLivros {
     livroList.add(new Livro(titulo, autor, anoPublicacao));
   }
 
+  public void exibirLivros(){
+    System.out.println(livroList);
+  }
+
   public List<Livro> pesquisarPorAutor(String autor) {
     List<Livro> livrosPorAutor = new ArrayList<>();
     if (!livroList.isEmpty()) {
@@ -62,12 +66,15 @@ public class CatalogoLivros {
     // Criando uma instância do catálogo de livros
     CatalogoLivros catalogoLivros = new CatalogoLivros();
 
+    catalogoLivros.exibirLivros();
+
     // Adicionando livros ao catálogo
     catalogoLivros.adicionarLivro("Microsserviços Prontos Para a Produção", "Susan J. Fowler", 2017);
     catalogoLivros.adicionarLivro("Java Guia do Programador", "Peter Jandl Junior", 2021);
     catalogoLivros.adicionarLivro("Código Limpo", "Robert C. Martin", 2009);
     catalogoLivros.adicionarLivro("O Codificador Limpo", "Robert C. Martin", 2012);
 
+    catalogoLivros.exibirLivros();
     // Exibindo livros pelo mesmo autor
     System.out.println(catalogoLivros.pesquisarPorAutor("Robert C. Martin"));
 
